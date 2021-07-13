@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
     'Food Hug',
   ];
 
-  final webImagesPrefix = !kIsWeb ? 'assets/' : '';
+  // final webImagesPrefix = !kIsWeb ? 'assets/' : '';
 
   HomePage({Key? key}) : super(key: key);
 
@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   alignment: Alignment.topCenter,
-                  image: AssetImage('${webImagesPrefix}food/header.jpg'),
+                  image: AssetImage('assets/food/header.jpg'),
                 ),
               ),
               height: 300,
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                             Expanded(
                               child: InkWell(
                                 child: Ink.image(
-                                  image: AssetImage('${webImagesPrefix}food/${index + 1}.jpeg'),
+                                  image: AssetImage('assets/food/${index + 1}.jpeg'),
                                   fit: BoxFit.cover,
                                 ),
                                 onTap: () {
